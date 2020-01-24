@@ -9,6 +9,10 @@ $(document).ready(function () {
       var workTransportation = $(this).val();
       $('#work-output').append(workTransportation + "<br>")
     })
+    $('input:checkbox[name=fun-transpo]:checked').each(function () {
+      var funTransportation = $(this).val();
+      $('#fun-output').append(funTransportation + "<br>")
+    })
     $('#formy').hide();
   })
 })
